@@ -8,14 +8,15 @@ const port = 3000;
 // =======================================
 //              DATABASE
 // =======================================
-// const bakedGoods = require('./models/bakedgoods.js');
 const budget = require('./models/budget.js')
 // =======================================
 //              ROUTES
 // =======================================
-app.get('/budgets',(req, res)=>{
-    res.send('Hello world')
+app.get('/budget',(req, res)=>{
+    res.send('This page is working')
 })
+
+
 // middleware 
 
 
@@ -37,5 +38,5 @@ app.get('/budgets',(req, res)=>{
 //              LISTENER
 // =======================================
 app.listen(port, () => {
-  console.log(`Biscoff Bakery app listening on port: ${port}`)
+  console.log(`Budgtr app listening on port: ${port}`)
 });
