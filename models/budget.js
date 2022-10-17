@@ -70,7 +70,3 @@ module.exports = [
       tags: ["pets"],
     },
   ];
-
-
-  // how to export this 
-  // and the CSS 
