@@ -29,7 +29,9 @@ app.get("/budgets", (req, res) => {
 });
 
 // NEW ROUTE
-
+app.get('/budgets/new',(req, res)=>{
+  res.render('new.ejs')
+})
 // POST
 
 // show route
