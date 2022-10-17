@@ -16,8 +16,8 @@ const budget = require('./models/budget.js')
 app.get('/',(req, res)=>{
     res.send('<h1> This page is working<h1/>')
 })
+// console.log(budget)
 
-console.log(budget)
 // middleware 
 
 
@@ -29,12 +29,15 @@ app.get('/budgets', (req, res)=>{
   })
 })
 
-/// NEW ROUTE
+// NEW ROUTE
 
 
+// =================================================================================
+// I STOPPED AT SHOW AND I'LL START WORKING ON SHOW
+/// A show route and show.ejs, a link from index.ejsitem name to its show page
+// =================================================================================
 
-
-/// POST
+// POST
 
 
 // show route
