@@ -32,7 +32,6 @@ app.get("/budgets", (req, res) => {
 app.get('/budgets/new',(req, res)=>{
   res.render('new.ejs')
 })
-// POST
 
 // show route
 app.get("/budgets/:id", (req, res) => {
@@ -41,6 +40,16 @@ app.get("/budgets/:id", (req, res) => {
     budget: budget[req.params.id],
   });
 });
+
+
+// POST
+app.post('/budgets',(req, res)=>{
+  console.log(req.body)
+  budget.push(req.body)
+  console.log(budget)
+  res.redirect('/budgets')
+})
+
 
 // =======================================
 //              LISTENER
