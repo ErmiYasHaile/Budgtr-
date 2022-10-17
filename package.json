@@ -2,12 +2,14 @@
   "dependencies": {
     "ejs": "^3.1.8",
     "express": "^4.18.2",
+    "method-override": "^3.0.0",
     "nodemon": "^2.0.20"
   },
+
+ 
   "name": "budgtr",
   "version": "1.0.0",
   "main": "budget.js",
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon server.js"

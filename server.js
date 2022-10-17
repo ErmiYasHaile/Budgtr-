@@ -5,6 +5,7 @@ const express = require('express');
 const app = express();
 const port = 3000;
 
+
 // =======================================
 //              DATABASE
 // =======================================
@@ -12,16 +13,21 @@ const budget = require('./models/budget.js')
 // =======================================
 //              ROUTES
 // =======================================
-app.get('/budget',(req, res)=>{
-    res.send('This page is working')
+app.get('/',(req, res)=>{
+    res.send('<h1> This page is working<h1/>')
 })
 
-
+console.log(budget)
 // middleware 
 
 
 // index route
-
+app.get('/budgets', (req, res)=>{
+  // res.send(budget)
+  res.render('index.ejs',{
+    budget: budget
+  })
+})
 
 /// NEW ROUTE
 
