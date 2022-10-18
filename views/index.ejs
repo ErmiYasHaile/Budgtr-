@@ -8,11 +8,24 @@
     
     <title>Budgtr</title>
   </head>
-  <body>
-    
-    <h4>Bank account</h4>
-    <input type="number" >
-    <h1>Budgtr</h1>
+  <body> 
+    <!-- let BA = '' -->
+    <!-- if (BA<0);
+    background-color:red
+  else if (BA > 1000);
+background-color: blue;
+ -->
+ <% let bankAccount='',%>
+ <% if (bankAccount < 0) { %>
+  <body style="background-color:red">
+<% } else if (bankAccount > 1000) { %>
+  <body style="background-color:blue ">
+<% } %>
+
+<h1>Bank Account: <%= bankAccount %></h1>
+
+
+
 
     <a href="/budgets/new">
       <button>NEW ITEM</button>
