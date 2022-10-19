@@ -17,8 +17,8 @@ background-color: blue;
  -->
 
  <% let bankAccount= budget.reduce((additionalAmt,budget)=>{
-  return additionalAmt + budget;
- },)%>
+  return additionalAmt + parseInt(budget.amount);
+ },0)%>
 
  <% if (bankAccount < 0) { %>
   <body style="background-color:red">
