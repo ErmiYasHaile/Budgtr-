@@ -1,3 +1,5 @@
+//Beautiful notes in your code, great for referencing down the road.
+
 // =======================================
 //              DEPENDENCIES
 // =======================================
